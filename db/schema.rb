@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170809182520) do
+ActiveRecord::Schema.define(version: 20170809191842) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "checkouts", force: :cascade do |t|
+  create_table "transactions", force: :cascade do |t|
     t.float "amount"
     t.integer "card_number"
     t.string "card_name"

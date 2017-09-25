@@ -1,0 +1,7 @@
+<%if @transactions.any? %>
+  <% @transcations.each do |trans| %>
+    <%= trans.amount %>
+  <%end %>
+<%else %>
+  No current transactions
+<%end%>
